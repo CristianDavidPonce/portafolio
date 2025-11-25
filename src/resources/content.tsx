@@ -3,14 +3,14 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Logo, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
+  firstName: "Cristian",
+  lastName: "Ponce",
+  name: `Cristian Ponce`,
+  role: "Full Stack Developer",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "cristianponce94@outlook.com",
+  location: "America/Guayaquil", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["Spanish", "English"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
@@ -61,24 +61,24 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Building ideas into reality</>,
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong className="ml-4">Portafolio</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
-          Featured work
+          Building
         </Text>
       </Row>
     ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/",
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <BrandLogo />, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm <strong>Cris</strong>, a Full Stack Developer, working with JavaScript, TypeScript, C#, React, .NET, and React Native,
+      <br /> specializing in crafting seamless user experiences. After hours, I build my own projects.
     </>
   ),
 };
@@ -104,9 +104,11 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Software Developer with over 6 years of experience in designing and implementing technological solutions. 
+        I have participated in high-impact projects in sectors such as healthcare, e-commerce, logistics, inventory management, 
+        WMS and TMS systems, as well as booking and shipping platforms, including airline reservations.
+        My main stack includes Node.js, TypeScript, React, React Native, Next.js, .NET and C#, focusing on the development 
+        of web, mobile and cloud solutions.
       </>
     ),
   },
@@ -115,41 +117,50 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "LOGIZTIK ALLIANCE",
+        timeframe: "November 2023 - Present",
+        role: "Semi Senior Developer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Development of mobile applications for external and internal clients, focused on 
+            operational efficiency and user experience.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Development and maintenance of frontend and backend systems for logistics solutions, 
+            including WMS (Warehouse Management System), TMS (Transportation Management System) and 
+            booking and shipping platforms, with emphasis on airline reservation management and cargo tracking.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "ASISTAMED SAS",
+        timeframe: "April 2023 – November 2023",
+        role: "Systems, Development, Technology and Projects Supervisor",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Supervise software project development
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Development of web and mobile applications
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "SIS-MEDIN LTDA",
+        timeframe: "April 2019 – April 2023",
+        role: "Programmer",
+        achievements: [
+          <>
+            Technology department supervisor
+          </>,
+          <>
+            Web and mobile application developer
+          </>,
+          <>
+            Coordinate the implementation of new projects focused on management systems 
+            for healthcare companies.
           </>,
         ],
         images: [],
@@ -158,53 +169,30 @@ const about: About = {
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Education",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Escuela Politécnica Nacional",
+        description: <>Electronics and Control Engineering - January 2019</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Recent Certifications",
+        description: <>
+          AZ 900 Azure Fundamentals (Mar. 2025), .NET MAUI course (Sep. 2024), 
+          Scrum Fundamentals (Dec. 2023), among others.
+        </>,
       },
     ],
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
+    title: "Technical Skills",
     skills: [
       {
-        title: "Figma",
+        title: "Frontend Development",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
-        ),
-        tags: [
-          {
-            name: "Figma",
-            icon: "figma",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        title: "Next.js",
-        description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+          <>Development of modern web applications with React.js, Next.js and TypeScript, 
+          focusing on creating intuitive and responsive user interfaces.</>
         ),
         tags: [
           {
@@ -212,23 +200,71 @@ const about: About = {
             icon: "javascript",
           },
           {
+            name: "TypeScript",
+            icon: "typescript",
+          },
+          {
+            name: "React",
+            icon: "react",
+          },
+          {
             name: "Next.js",
             icon: "nextjs",
           },
+        ],
+        images: [],
+      },
+      {
+        title: "Backend & Mobile Development",
+        description: (
+          <>Development of robust APIs with .NET and Node.js, and cross-platform 
+          mobile applications with React Native and .NET MAUI.</>
+        ),
+        tags: [
           {
-            name: "Supabase",
-            icon: "supabase",
+            name: "C#",
+            icon: "csharp",
+          },
+          {
+            name: ".NET",
+            icon: "dotnet",
+          },
+          {
+            name: "Node.js",
+            icon: "nodejs",
+          },
+          {
+            name: "React Native",
+            icon: "react",
           },
         ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
+        images: [],
+      },
+      {
+        title: "Cloud & Database",
+        description: (
+          <>Experience with cloud platforms like Azure and Google Cloud, 
+          working with SQL Server, MySQL and MongoDB databases.</>
+        ),
+        tags: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "Azure",
+            icon: "azure",
+          },
+          {
+            name: "SQL Server",
+            icon: "database",
+          },
+          {
+            name: "MongoDB",
+            icon: "mongodb",
+          },
+          {
+            name: "Docker",
+            icon: "docker",
           },
         ],
+        images: [],
       },
     ],
   },
