@@ -19,6 +19,7 @@ interface ProjectCardProps {
   description: string;
   avatars: { src: string }[];
   link: string;
+  orientation?: string;
 }
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -29,16 +30,25 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   description,
   avatars,
   link,
+  orientation = "horizontal",
 }) => {
+  const isVertical = orientation === "vertical";
+  
   return (
     <Column fillWidth gap="m">
-      <Carousel
-        sizes="(max-width: 960px) 100vw, 960px"
-        items={images.map((image) => ({
-          slide: image,
-          alt: title,
-        }))}
-      />
+      <div style={isVertical ? { 
+        maxWidth: "280px", 
+        margin: "0 auto",
+        width: "100%"
+      } : undefined}>
+        <Carousel
+          sizes={isVertical ? "280px" : "(max-width: 960px) 100vw, 960px"}
+          items={images.map((image) => ({
+            slide: image,
+            alt: title,
+          }))}
+        />
+      </div>
       <Flex
         s={{ direction: "column" }}
         fillWidth

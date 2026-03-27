@@ -26,25 +26,13 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/cristianponce",
     essential: true,
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-    essential: true,
-  },
-  {
-    name: "Instagram",
-    icon: "instagram",
-    link: "https://www.instagram.com/once_ui/",
-    essential: false,
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.linkedin.com/in/cristianponce/",
     essential: true,
   },
   {
@@ -66,19 +54,19 @@ const home: Home = {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Portafolio</strong>{" "}
+        <strong className="ml-4">Mi Portafolio</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
-          Building
+          Proyectos Destacados
         </Text>
       </Row>
     ),
-    href: "/",
+    href: "/work",
   },
   subline: (
     <>
-      I'm <strong>Cris</strong>, a Full Stack Developer, working with JavaScript, TypeScript, C#, React, .NET, and React Native,
-      <br /> specializing in crafting seamless user experiences. After hours, I build my own projects.
+      Soy <strong>Cris</strong>, Full Stack Developer especializado en JavaScript, TypeScript, C#, React, .NET y React Native.
+      <br /> Desarrollo aplicaciones web, móviles y de escritorio que resuelven problemas reales.
     </>
   ),
 };
